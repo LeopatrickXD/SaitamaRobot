@@ -14,38 +14,38 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 792109647  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Sawada"
+    API_ID = 7607621  # integer value, dont use ""
+    API_HASH = "1f7398a4ef7c6839d092d2853245f146"
+    TOKEN = "5055594601:AAF_RZBZRROrjk3dYTS7jdp8EH8Oj_oUQZ8"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 5023043542  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "YenneferXD_Assistant"
     SUPPORT_CHAT = "OnePunchSupport"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001253661229
+        -1001737101986
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001190806654
+        -1001737101986
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules # its "URI" and not "URL" as herok and similar ones only accept it as such
+    SQLALCHEMY_DATABASE_URI = "postgres://ouvqgpuh:mzWO_tit1ILzgziwFHRLbveg0zvOLd7I@castor.db.elephantsql.com/ouvqgpuh"  # needed for any database modules # its "URI" and not "URL" as herok and similar ones only accept it as such
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = "yTJK28PDkBKqqzWE8bCsTa2Ud7x5D1Vm6Cuvjacj9NjFWCcssIsFJeivQ~Son6pw"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "sudos")
+    DRAGONS = get_user_list("elevated_users.json", "2124384924")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "devs")
+    DEV_USERS = get_user_list("elevated_users.json", "2124384924")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "supports")
+    DEMONS = get_user_list("elevated_users.json", "2124384924")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "tigers")
+    TIGERS = get_user_list("elevated_users.json", "2124384924")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
